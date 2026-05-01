@@ -1,6 +1,7 @@
 package main.java.oop.model;
 
 import main.java.oop.db.DataStore;
+import main.java.oop.model.room.Room;
 
 import java.util.ArrayList;
 import java.util.List;

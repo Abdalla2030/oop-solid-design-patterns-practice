@@ -2,7 +2,7 @@ package main.java.oop.db;
 
 import java.util.ArrayList;
 import java.util.List;
-import main.java.oop.model.Room;
+import main.java.oop.model.room.Room;
 import main.java.oop.model.Meal;
 import main.java.oop.model.Order;
 

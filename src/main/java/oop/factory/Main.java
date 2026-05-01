@@ -1,6 +1,6 @@
 package main.java.oop.factory;
 
-import main.java.oop.model.Room;
+import main.java.oop.model.room.Room;
 
 public class Main {
 

@@ -1,6 +1,6 @@
 package main.java.oop;
 
-import main.java.oop.model.Room;
+import main.java.oop.model.room.Room;
 
 import java.util.List;
 
