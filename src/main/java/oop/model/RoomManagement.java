@@ -9,13 +9,13 @@ public class RoomManagement {
 
     DataStore dataStore = new DataStore();
 
+    public RoomManagement(DataStore dataStore) {
+        this.dataStore = dataStore;
+    }
+
     void addRoom(int roomNumber, int numberOfBeds, double price) {
 
-        Room newRoom = new Room();
-
-        newRoom.setNumber(roomNumber);
-        newRoom.setNumberOfBeds(numberOfBeds);
-        newRoom.setPrice(price);
+        Room newRoom = new Room(roomNumber, numberOfBeds, price);
 
         dataStore.getRooms().add(newRoom);
     }
@@ -29,7 +29,7 @@ public class RoomManagement {
         }
     }
 
-    void getAvailableRooms() {
+    List<Room> getAvailableRooms() {
 
         List<Room> availableRooms = new ArrayList<>();
 
@@ -39,11 +39,7 @@ public class RoomManagement {
             }
         }
 
-        System.out.println("room number   number of beds   price");
-
-        for (Room room : availableRooms) {
-            System.out.println(room.getNumber() + "\t\t\t\t" + room.getNumberOfBeds() + "\t\t\t\t" + room.getPrice());
-        }
+        return availableRooms;
     }
 
     void reserveRoom(int roomNumber, int reservationDays, String customerName, String customerId) {

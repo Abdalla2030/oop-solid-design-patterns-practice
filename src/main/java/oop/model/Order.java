@@ -10,6 +10,10 @@ public class Order {
 
     private List<Meal> meals = new ArrayList<>();
 
+    public Order(List<Meal> meals) {
+        this.meals = meals;
+    }
+
     public List<Meal> getMeals() {
         return meals;
     }

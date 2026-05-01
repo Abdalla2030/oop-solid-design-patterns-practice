@@ -17,10 +17,7 @@ public class Menu {
 
     void addMeal(String name, String description, double price) {
 
-        Meal meal = new Meal();
-        meal.setName(name);
-        meal.setDescription(description);
-        meal.setPrice(price);
+        Meal meal = new Meal(name, description, price);
 
         dataStore.getMeals().add(meal);
     }

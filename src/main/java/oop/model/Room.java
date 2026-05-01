@@ -13,6 +13,12 @@ public class Room {
     private double price;
     private boolean isReserved;
 
+    public Room(int number, int numberOfBeds, double price) {
+        this.number = number;
+        this.numberOfBeds = numberOfBeds;
+        this.price = price;
+    }
+
     public int getNumber() {
         return number;
     }

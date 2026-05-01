@@ -6,6 +6,11 @@ public class Reservation {
     private LocalDate reservationStartDate;
     private LocalDate reservationEndDate;
 
+    public Reservation(LocalDate start, LocalDate end) {
+        this.reservationStartDate = start;
+        this.reservationEndDate = end;
+    }
+
     public LocalDate getReservationStartDate() {
         return reservationStartDate;
     }
