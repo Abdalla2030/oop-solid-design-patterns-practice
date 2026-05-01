@@ -1,6 +1,9 @@
 package main.java.oop.factory;
 
+import main.java.oop.model.room.DoubleRoom;
 import main.java.oop.model.room.Room;
+import main.java.oop.model.room.SingleRoom;
+import main.java.oop.model.room.SweetRoom;
 
 public class RoomFactory {
 
@@ -8,13 +11,13 @@ public class RoomFactory {
 
         switch (type) {
             case SINGLE:
-                return new Room(number, 1, price);
+                return new SingleRoom(number, price);
 
             case DOUBLE:
-                return new Room(number, 2, price);
+                return new DoubleRoom(number, price);
 
             case SUITE:
-                return new Room(number, beds, price);
+                return new SweetRoom(number, price, "default");
 
             default:
                 throw new IllegalArgumentException("Invalid room type");

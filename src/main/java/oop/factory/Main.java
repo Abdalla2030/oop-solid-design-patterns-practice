@@ -12,8 +12,8 @@ public class Main {
         Room doubleRoom = roomFactory.createRoom(RoomType.DOUBLE, 2, 2, 300);
         Room suiteRoom = roomFactory.createRoom(RoomType.SUITE, 3, 3, 500);
 
-        System.out.println(singleRoom.getNumber() + " " + singleRoom.getNumberOfBeds());
-        System.out.println(doubleRoom.getNumber() + " " + doubleRoom.getNumberOfBeds());
-        System.out.println(suiteRoom.getNumber() + " " + suiteRoom.getNumberOfBeds());
+        System.out.println(singleRoom.getNumber() + " " + singleRoom.getNumber());
+        System.out.println(doubleRoom.getNumber() + " " + doubleRoom.getNumber());
+        System.out.println(suiteRoom.getNumber() + " " + suiteRoom.getNumber());
     }
 }

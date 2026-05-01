@@ -13,6 +13,6 @@ public class Main {
                 .setReserved(true)
                 .build();
 
-        System.out.println(room.getNumber() + " " + room.getNumberOfBeds() + " " + room.getPrice());
+        System.out.println(room.getNumber() + " " + room.getPrice());
     }
 }

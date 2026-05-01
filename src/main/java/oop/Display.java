@@ -9,7 +9,7 @@ public class Display {
         System.out.println("room number   number of beds   price");
 
         for (Room room : availableRooms) {
-            System.out.println(room.getNumber() + "\t\t\t\t" + room.getNumberOfBeds() + "\t\t\t\t" + room.getPrice());
+            System.out.println(room.getNumber() +  "\t\t\t\t" + room.getPrice());
         }
     }
 }

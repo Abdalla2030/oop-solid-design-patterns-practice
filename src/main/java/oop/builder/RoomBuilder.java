@@ -1,5 +1,6 @@
 package main.java.oop.builder;
 
+import main.java.oop.model.room.DoubleRoom;
 import main.java.oop.model.room.Room;
 
 public class RoomBuilder {
@@ -30,7 +31,7 @@ public class RoomBuilder {
     }
 
     public Room build() {
-        Room room = new Room(number, numberOfBeds, price);
+        Room room = new DoubleRoom(number, price); // or SingleRoom
         room.setReserved(isReserved);
         return room;
     }

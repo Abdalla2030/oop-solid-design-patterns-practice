@@ -2,6 +2,7 @@ package main.java.oop.model;
 
 import main.java.oop.db.DataStore;
 import main.java.oop.model.room.Room;
+import main.java.oop.model.room.SingleRoom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ public class RoomManagement {
 
     void addRoom(int roomNumber, int numberOfBeds, double price) {
 
-        Room newRoom = new Room(roomNumber, numberOfBeds, price);
+        Room newRoom = new SingleRoom(roomNumber, price);
 
         dataStore.getRooms().add(newRoom);
     }

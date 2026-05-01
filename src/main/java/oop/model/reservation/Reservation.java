@@ -64,8 +64,8 @@ public abstract class Reservation {
     public abstract double calculateRoomReservationAmount();
 
     public double calculateTotalAmount() {
-
-        return calculateRoomReservationAmount() + order.calculateOrderTotalAmount();
+        return calculateRoomReservationAmount() +
+                (order != null ? order.calculateOrderTotalAmount() : 0);
     }
 
 }
