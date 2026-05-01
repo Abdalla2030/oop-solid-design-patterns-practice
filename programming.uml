@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>main.java.structure.programming</OriginalElement>
+  <nodes>
+    <node x="541.9375" y="614.0">main.java.structure.programming.RoomManagement</node>
+    <node x="90.48202764976963" y="223.0">main.java.structure.programming.Order</node>
+    <node x="919.4736175115206" y="458.0">main.java.structure.programming.Menu</node>
+    <node x="416.45443548387084" y="930.0">main.java.structure.programming.HMSRunner</node>
+    <node x="597.0625" y="168.0">main.java.structure.programming.Room</node>
+    <node x="821.9375" y="614.0">main.java.structure.programming.MenuManagement</node>
+    <node x="276.9375" y="658.0">main.java.structure.programming.CheckoutManagement</node>
+    <node x="453.9375" y="0.0">main.java.structure.programming.Meal</node>
+    <node x="449.9375" y="436.0">main.java.structure.programming.DataStore</node>
+    <node x="41.9375" y="647.0">main.java.structure.programming.OrderManagement</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.java.structure.programming.OrderManagement" target="main.java.structure.programming.Meal">
+      <point x="-80.625" y="-80.0" />
+      <point x="68.8125" y="594.0" />
+      <point x="75.95443548387084" y="594.0" />
+      <point x="75.95443548387084" y="118.0" />
+      <point x="464.22321428571433" y="118.0" />
+      <point x="-61.71428571428572" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.CheckoutManagement" target="main.java.structure.programming.DataStore">
+      <point x="46.60000000000002" y="-69.0" />
+      <point x="440.0375" y="584.0" />
+      <point x="487.9375" y="584.0" />
+      <point x="-38.0" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.MenuManagement" target="main.java.structure.programming.Menu">
+      <point x="60.75" y="-113.0" />
+      <point x="1004.1875" y="594.0" />
+      <point x="1023.7236175115205" y="594.0" />
+      <point x="34.75" y="27.0" />
+    </edge>
+    <edge source="main.java.structure.programming.Order" target="main.java.structure.programming.Meal">
+      <point x="0.0" y="-49.0" />
+      <point x="172.98202764976963" y="128.0" />
+      <point x="484.7946428571429" y="128.0" />
+      <point x="-41.14285714285711" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.OrderManagement" target="main.java.structure.programming.Order">
+      <point x="-26.875" y="-80.0" />
+      <point x="122.5625" y="594.0" />
+      <point x="139.79331797235028" y="594.0" />
+      <point x="139.79331797235028" y="416.0" />
+      <point x="172.98202764976963" y="416.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.HMSRunner" target="main.java.structure.programming.Order">
+      <point x="-68.75" y="-27.0" />
+      <point x="422.70443548387084" y="910.0" />
+      <point x="14.0" y="910.0" />
+      <point x="14.0" y="396.0" />
+      <point x="106.98202764976963" y="396.0" />
+      <point x="-66.0" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.HMSRunner" target="main.java.structure.programming.DataStore">
+      <point x="18.75" y="-27.0" />
+      <point x="510.20443548387084" y="870.0" />
+      <point x="531.4375" y="870.0" />
+      <point x="531.4375" y="594.0" />
+      <point x="533.5375" y="594.0" />
+      <point x="7.600000000000023" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.HMSRunner" target="main.java.structure.programming.MenuManagement">
+      <point x="56.25" y="-27.0" />
+      <point x="547.7044354838708" y="900.0" />
+      <point x="882.6875" y="900.0" />
+      <point x="-60.75" y="113.0" />
+    </edge>
+    <edge source="main.java.structure.programming.Menu" target="main.java.structure.programming.Meal">
+      <point x="0.0" y="-27.0" />
+      <point x="988.9736175115206" y="138.0" />
+      <point x="567.0803571428571" y="138.0" />
+      <point x="41.14285714285711" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.OrderManagement" target="main.java.structure.programming.DataStore">
+      <point x="80.625" y="-80.0" />
+      <point x="230.0625" y="574.0" />
+      <point x="472.73750000000007" y="574.0" />
+      <point x="-53.19999999999999" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.RoomManagement" target="main.java.structure.programming.DataStore">
+      <point x="-97.5" y="-113.0" />
+      <point x="574.4375" y="594.0" />
+      <point x="548.7375" y="594.0" />
+      <point x="22.799999999999955" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.CheckoutManagement" target="main.java.structure.programming.Meal">
+      <point x="-46.599999999999966" y="-69.0" />
+      <point x="346.8375000000001" y="554.0" />
+      <point x="334.9986175115206" y="554.0" />
+      <point x="334.9986175115206" y="138.0" />
+      <point x="505.36607142857144" y="138.0" />
+      <point x="-20.571428571428555" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.DataStore" target="main.java.structure.programming.Order">
+      <point x="-50.66666666666663" y="-49.0" />
+      <point x="475.27083333333337" y="396.0" />
+      <point x="238.98202764976963" y="396.0" />
+      <point x="66.0" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.MenuManagement" target="main.java.structure.programming.DataStore">
+      <point x="-60.75" y="-113.0" />
+      <point x="882.6875" y="564.0" />
+      <point x="594.3375" y="564.0" />
+      <point x="68.39999999999998" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.HMSRunner" target="main.java.structure.programming.RoomManagement">
+      <point x="43.75" y="-27.0" />
+      <point x="535.2044354838708" y="890.0" />
+      <point x="736.9375" y="890.0" />
+      <point x="65.0" y="113.0" />
+    </edge>
+    <edge source="main.java.structure.programming.HMSRunner" target="main.java.structure.programming.OrderManagement">
+      <point x="-31.25" y="-27.0" />
+      <point x="460.20443548387084" y="880.0" />
+      <point x="203.1875" y="880.0" />
+      <point x="53.75" y="80.0" />
+    </edge>
+    <edge source="main.java.structure.programming.DataStore" target="main.java.structure.programming.Room">
+      <point x="50.66666666666663" y="-49.0" />
+      <point x="576.6041666666666" y="416.0" />
+      <point x="677.6875" y="416.0" />
+      <point x="-26.875" y="104.0" />
+    </edge>
+    <edge source="main.java.structure.programming.RoomManagement" target="main.java.structure.programming.Room">
+      <point x="97.49999999999997" y="-113.0" />
+      <point x="769.4375" y="594.0" />
+      <point x="759.6683179723502" y="594.0" />
+      <point x="759.6683179723502" y="416.0" />
+      <point x="785.1875" y="416.0" />
+      <point x="80.62499999999997" y="104.0" />
+    </edge>
+    <edge source="main.java.structure.programming.HMSRunner" target="main.java.structure.programming.CheckoutManagement">
+      <point x="-6.25" y="-27.0" />
+      <point x="485.20443548387084" y="860.0" />
+      <point x="451.6875" y="860.0" />
+      <point x="58.25" y="69.0" />
+    </edge>
+    <edge source="main.java.structure.programming.MenuManagement" target="main.java.structure.programming.Meal">
+      <point x="-20.25" y="-113.0" />
+      <point x="923.1875" y="594.0" />
+      <point x="908.9736175115206" y="594.0" />
+      <point x="908.9736175115206" y="148.0" />
+      <point x="546.5089285714286" y="148.0" />
+      <point x="20.571428571428555" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.CheckoutManagement" target="main.java.structure.programming.Order">
+      <point x="-93.19999999999993" y="-69.0" />
+      <point x="299.4986175115206" y="416.0" />
+      <point x="205.98202764976963" y="416.0" />
+      <point x="33.0" y="49.0" />
+    </edge>
+    <edge source="main.java.structure.programming.CheckoutManagement" target="main.java.structure.programming.Room">
+      <point x="0.0" y="-69.0" />
+      <point x="393.4375" y="554.0" />
+      <point x="368.03490783410126" y="554.0" />
+      <point x="368.03490783410126" y="406.0" />
+      <point x="623.9375" y="406.0" />
+      <point x="-80.625" y="104.0" />
+    </edge>
+    <edge source="main.java.structure.programming.DataStore" target="main.java.structure.programming.Meal">
+      <point x="0.0" y="-49.0" />
+      <point x="525.9375" y="396.0" />
+      <point x="498.43490783410124" y="396.0" />
+      <point x="498.43490783410124" y="148.0" />
+      <point x="525.9375" y="148.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6869095816464238" x="376.5" y="350.5" />
+  <SelectedNodes>
+    <node>main.java.structure.programming.Meal</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
