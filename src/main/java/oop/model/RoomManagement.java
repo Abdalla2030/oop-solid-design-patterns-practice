@@ -1,0 +1,83 @@
+package main.java.oop.model;
+
+import main.java.oop.db.DataStore;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RoomManagement {
+
+    DataStore dataStore = new DataStore();
+
+    void addRoom(int roomNumber, int numberOfBeds, double price) {
+
+        Room newRoom = new Room();
+
+        newRoom.setNumber(roomNumber);
+        newRoom.setNumberOfBeds(numberOfBeds);
+        newRoom.setPrice(price);
+
+        dataStore.getRooms().add(newRoom);
+    }
+
+    void removeRoom(int roomNumber) {
+
+        for (Room room : dataStore.getRooms()) {
+            if (room.getNumber() == roomNumber) {
+                dataStore.getRooms().remove(room);
+            }
+        }
+    }
+
+    void getAvailableRooms() {
+
+        List<Room> availableRooms = new ArrayList<>();
+
+        for (Room room : dataStore.getRooms()) {
+            if (!room.isReserved()) {
+                availableRooms.add(room);
+            }
+        }
+
+        System.out.println("room number   number of beds   price");
+
+        for (Room room : availableRooms) {
+            System.out.println(room.getNumber() + "\t\t\t\t" + room.getNumberOfBeds() + "\t\t\t\t" + room.getPrice());
+        }
+    }
+
+    void reserveRoom(int roomNumber, int reservationDays, String customerName, String customerId) {
+
+        Room selectedRoom = null;
+
+        for (Room room : dataStore.getRooms()) {
+            if (room.getNumber() == roomNumber) {
+                selectedRoom = room;
+            }
+        }
+
+        selectedRoom.setReserved(true);
+    }
+
+    void freeRoom(int roomNumber) {
+
+        Room selectedRoom = null;
+
+        for (Room room : dataStore.getRooms()) {
+            if (room.getNumber() == roomNumber) {
+                selectedRoom = room;
+            }
+        }
+
+        selectedRoom.setReserved(false);
+    }
+
+
+    public DataStore getDataStore() {
+        return dataStore;
+    }
+
+    public void setDataStore(DataStore dataStore) {
+        this.dataStore = dataStore;
+    }
+}
