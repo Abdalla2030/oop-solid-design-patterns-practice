@@ -36,7 +36,7 @@ public class Room {
         return room;
     }
 
-    public static Room createRoomWithAmenities(int number, double price, int numberOfBeds, String amenities) {
+    public static Room createRoomWithAmenities(int number, double price, int numberOfBeds) {
         Room room = new Room();
         room.setNumber(number);
         room.setPrice(price);
