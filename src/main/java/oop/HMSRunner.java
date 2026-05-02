@@ -9,6 +9,8 @@ import main.java.oop.management.abstraction.correct.RoomDataAccessManager;
 import main.java.oop.model.Customer;
 import main.java.oop.model.Meal;
 import main.java.oop.model.reservation.CancelableReservation;
+import main.java.oop.model.reservation.Reservation;
+import main.java.oop.model.reservation.UncancellableReservation;
 import main.java.oop.model.room.DoubleRoom;
 import main.java.oop.model.room.SingleRoom;
 import main.java.oop.model.room.Room;
@@ -21,17 +23,25 @@ public class HMSRunner {
 
     public static void main(String[] args) {
 
-        DataStore dataStore = new DataStore();
-        RoomDataAccessManager roomManagement = new RoomManagement(dataStore);
-        MenuDataAccessManager menuManagement = new MenuManagement(dataStore);
+        Room room = new DoubleRoom(1, 200.0);
+        Customer customer = new Customer("Abdalla", "1" );
 
-        roomManagement.addRoom(new DoubleRoom(1, 250.0));
-        roomManagement.addRoom(new SingleRoom(2, 350.0));
-        roomManagement.addRoom(new SweetRoom(3, 1000.0, "air condition - SPA - BLA BLA"));
-        roomManagement.addRoom(new DoubleRoom(4, 200.0));
+        Reservation reservation1 = new CancelableReservation(
+                room,
+                customer,
+                LocalDate.now(),
+                LocalDate.now().plusDays(3)
+        );
 
-        menuManagement.addMeal(new Meal("rice", "rice with meat", 300.0));
-        menuManagement.addMeal(new Meal("pasta", "pasta with meat", 350.0));
+        Reservation reservation2 = new UncancellableReservation(
+                room,
+                customer,
+                LocalDate.now(),
+                LocalDate.now().plusDays(3)
+        );
+
+        System.out.println("Cancelable: " + reservation1.calculateRoomReservationAmount());
+        System.out.println("Uncancellable: " + reservation2.calculateRoomReservationAmount());
 
     }
 }
