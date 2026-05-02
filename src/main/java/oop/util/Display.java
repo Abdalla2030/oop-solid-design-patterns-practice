@@ -1,4 +1,4 @@
-package main.java.oop;
+package main.java.oop.util;
 
 import main.java.oop.model.room.Room;
 

@@ -2,6 +2,10 @@ package main.java.oop.db;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import main.java.oop.model.Customer;
+import main.java.oop.model.Menu;
+import main.java.oop.model.reservation.Reservation;
 import main.java.oop.model.room.Room;
 import main.java.oop.model.Meal;
 import main.java.oop.model.Order;
@@ -10,9 +14,15 @@ public class DataStore {
 
     private List<Room> rooms = new ArrayList<>();
 
-    private List<Meal> meals = new ArrayList<>();
+    private Menu menu = new Menu();
+
+    private List<Reservation> reservations = new ArrayList<>();
+
+    private List<Customer> customers = new ArrayList<>();
 
     private List<Order> orders = new ArrayList<>();
+
+
 
     public List<Room> getRooms() {
         return rooms;
@@ -22,12 +32,28 @@ public class DataStore {
         this.rooms = rooms;
     }
 
-    public List<Meal> getMeals() {
-        return meals;
+    public Menu getMenu() {
+        return menu;
     }
 
-    public void setMeals(List<Meal> meals) {
-        this.meals = meals;
+    public void setMenu(Menu menu) {
+        this.menu = menu;
+    }
+
+    public List<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
+    }
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(List<Customer> customers) {
+        this.customers = customers;
     }
 
     public List<Order> getOrders() {

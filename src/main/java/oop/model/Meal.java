@@ -1,6 +1,7 @@
 package main.java.oop.model;
 
 public class Meal {
+
     private String name;
     private String description;
     private double price;
@@ -13,6 +14,10 @@ public class Meal {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -29,9 +34,5 @@ public class Meal {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }

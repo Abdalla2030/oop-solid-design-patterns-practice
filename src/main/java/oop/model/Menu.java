@@ -9,47 +9,30 @@ public class Menu {
 
     List<Meal> meals = new ArrayList<>();
 
-    DataStore dataStore;
-
-    public Menu(DataStore dataStore) {
-        this.dataStore = dataStore;
+    public List<Meal> getMeals() {
+        return meals;
     }
 
-    void addMeal(String name, String description, double price) {
-
-        Meal meal = new Meal(name, description, price);
-
-        dataStore.getMeals().add(meal);
+    public void setMeals(List<Meal> meal) {
+        this.meals = meal;
     }
 
-    void removeMeal(String name) {
+    public void addNewMeal(Meal meal) {
 
-        for (Meal meal : dataStore.getMeals()) {
-            if (meal.getName().equals(name)) {
-                dataStore.getMeals().remove(meal);
-            }
-        }
+        this.meals.add(meal);
     }
 
-    Meal getMeal(String name) {
+    public void removeMeal(String mealName) {
 
-        Meal selectedMeal = null;
+        Meal requiredMeal = null;
+        for(Meal meal : meals) {
 
-        for (Meal meal : dataStore.getMeals()) {
-            if (meal.getName().equals(name)) {
-                selectedMeal = meal;
+            if(meal.getName().equals(mealName)) {
+
+                requiredMeal = meal;
             }
         }
 
-        return selectedMeal;
-    }
-
-    void getAllMeals() {
-
-        System.out.println("name    description         price");
-
-        for (Meal meal : dataStore.getMeals()) {
-            System.out.println(meal.getName() + "\t" + meal.getDescription() + "\t\t" + meal.getPrice());
-        }
+        meals.remove(requiredMeal);
     }
 }
